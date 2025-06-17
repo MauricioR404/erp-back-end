@@ -12,7 +12,7 @@ Este backend implementa una API RESTful protegida con Laravel Sanctum, diseñada
 1. Clonar el repositorio:
    ```bash
    git clone <url-del-repo-backend>
-   cd cliente-api
+   cd erp-back-end
    ```
 
 2. Instalar dependencias:
@@ -26,6 +26,7 @@ Este backend implementa una API RESTful protegida con Laravel Sanctum, diseñada
    ```
    Asegurate de configurar estas variables:
    ```
+   si usas ddev
    APP_URL=https://quantia-erp.ddev.site
    SESSION_DOMAIN=quantia-erp.ddev.site
    SANCTUM_STATEFUL_DOMAINS=localhost:5174
@@ -45,6 +46,7 @@ Este backend implementa una API RESTful protegida con Laravel Sanctum, diseñada
    ```
 
 ## 🔐 Autenticación
+   crear tu usario desde la base o con tinker
 - **Login**: `POST /login`  
   Cuerpo JSON: `{ "email": "", "password": "" }`
 - **Logout**: `POST /logout`  
